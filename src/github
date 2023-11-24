@@ -1,0 +1,26 @@
+- Lưu file code có gắn git lên github
+- B1: Tạo tk github
+- B2: Truy cập avatar bấm my repo...
+- B3: Tạo repo... trên github và copy đường mã https
+- B4: Tải code lên github theo câu lệnh:
+git remote add <Tên tự đăt> <mã https>
+- Remote là để phân biệt với Local.
+ + Local là file lưu trên máy
+ + Remote là lưu online
+- Kiểm tra các repo đã tạo:
+git remote
+- Nếu có sẽ trả kết quả là tên repo
+git remote -v
+- Tương tự nhưng có nhiều thông tin hơn
+git remote remove <Tên repo>
+- Xóa repo có tên tương ứng
+- Kiểm tra lại bằng "git remove" và chắc chắn đã xóa
+
+* Thêm code lên github
+- Trước tiên, khi mới tạo repo, ta là người duy nhất có thể
+- up file lên nên phải thông báo cho github biết, ta là người up file
+git config --global credential.username <Username - VD: KDMinh>
+- Bây giờ sử dụng lệnh push để đẩy repo lên github
+git push <Tên repo> <Nhánh của commit>
+ + Khi đẩy lên, ta không chỉ đẩy repo mà còn đẩy cả nhánh (hay toàn bộ lịch sử
+ + code trên nhánh đó). Tên nhánh, vd: master hoặc main

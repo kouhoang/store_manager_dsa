@@ -16,3 +16,20 @@ git -m commit "Version 1"
 - "Version 1" là comment cho lần commit
 git log
 - Kiểm tra lịch sử
+
+* Truy cập version trước đó
+git checkout <hashcode của commit>
+
+* Quay trở lại nhánh chính
+- Khi code ta sẽ tạo ra các nhánh
+ + VD: Từ Version 1, tạo ver 2,3. Quay lại 1 và update, có nhánh mới,
+ + lần cập nhật mới nhất mang theo HEAD, vị trí hiện tại
+git checkout <tên nhánh chính>
+- Quay trở lại nhánh chính và xóa bỏ nhánh kia
+
+* Lưu nhánh
+- Khi chuyển giữa các nhánh, nhánh mang tên master là nhánh lúc đầu, nhánh hiện tại
+- nếu đang được lưu thì bởi vì nó đang là nhánh hiện tại (Head)
+- Khi chuyển nhánh sẽ không có điểm nào lưu nó nữa nên nó sẽ không được trỏ tới
+- Khi đó, nếu muốn giữ lại, cần gắn tên cho nó
+git branch <tên nhánh> <mã hashcode của nhánh>
