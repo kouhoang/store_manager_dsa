@@ -1,0 +1,18 @@
+git learning
+
+cd C:/Users/admin/IdeaProjects/ProjectDSA
+- Truy cập đến thư mục
+ls
+- Liệt kê các file, subfolder trong thư mục (folder, directory)
+git init
+- Khởi tạo git
+git status
+- Kiểm tra trạng thái (lần đầu thường sẽ đỏ)
+git add .
+- Thêm tất cả mọi thứ trong thư mục vào phiên bản lựa chọn
+git status
+git -m commit "Version 1"
+- Tạo phiên bản (add chỉ là select thành phần cho phiên bản)
+- "Version 1" là comment cho lần commit
+git log
+- Kiểm tra lịch sử
