@@ -24,4 +24,7 @@ git config --global credential.username <Username - VD: KDMinh>
 git push <Tên repo> <Nhánh của commit>
  + Khi đẩy lên, ta không chỉ đẩy repo mà còn đẩy cả nhánh (hay toàn bộ lịch sử
  + code trên nhánh đó). Tên nhánh, vd: master hoặc main
- 
+- Mỗi khi commit, nhánh hiện tại được mở rộng (đã commit)
+- nhưng remote repo vẫn nằm ở commit trước đó. Vì vậy, nhận xét: cần update lại
+- Sử dụng lệnh push, vd:
+git push origin2 main2-branch
