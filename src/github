@@ -22,9 +22,73 @@ git remote remove <Tên repo>
 git config --global credential.username <Username - VD: KDMinh>
 - Bây giờ sử dụng lệnh push để đẩy repo lên github
 git push <Tên repo> <Nhánh của commit>
+ + Tên repo cho biết remote repo trên github mà mình muốn add.
  + Khi đẩy lên, ta không chỉ đẩy repo mà còn đẩy cả nhánh (hay toàn bộ lịch sử
  + code trên nhánh đó). Tên nhánh, vd: master hoặc main
 - Mỗi khi commit, nhánh hiện tại được mở rộng (đã commit)
 - nhưng remote repo vẫn nằm ở commit trước đó. Vì vậy, nhận xét: cần update lại
 - Sử dụng lệnh push, vd:
 git push origin2 main2-branch
+
+* Một số cách xử lý lỗi khi push
+1. Sai đường link https, sử dụng lệnh:
+git remote -v
+- Nếu sai thực hiện lệnh:
+ git remove <Tên repo>
++ để gỡ và tạo lại bằng:
+ git add <tên repo mới> <đường dẫn https>
+2. Quên hoặc chạy sai lệnh config. Thực hiện lại lệnh.
+
+* Feature of github
+- Cho phép các chỉnh sửa ở mỗi commit trên github,
+- Bấm vào biểu tượng quay lui (lịch sử) để xem sự thay đổi trong các đoạn code
+ + văn bản hay số lượng file.
+
+* (Feature 1) Sync changes from computer to github:
+- Sau khi push lên github, quay lại và sử dụng lệnh:
+git log --all --graph
+ + Ta sẽ thấy ở nhánh hiện tại có thêm 1 tên khác, vd:
+ HEAD -> master, origin/master
+ hay
+ HEAD -> <tên nhánh>, <tên remote repo>/<tên nhánh>
+- Khi thực hiện commit, như ở trên, nhánh local được update trong khi trên
+ + github chưa update nên có sự khác nhau, thực hiện lệnh push như ở trên.
+- Nếu bản cập nhật ở local và remote là như nhau, lệnh:
+git push <tên repo> <nhánh>
+ + sẽ trả kết quả: "Everything up-to-date"
+
+* (Feature 2) Nói thêm về push
+- Có thể thực hiện lệnh:
+ git push <tên repo> <nhánh> --set-upstream
+ + Khi đó:
+ git push
+ sẽ tự được hiểu là:
+ git push <tên repo> <nhánh>
+ -> shortcut
+- Git push chỉ push sự thay đổi trên commit
+- Khi sử dụng lệnh:
+git commit --amend -m <Tên commit>
+ + Branch sẽ phân nhánh mới dựa trên vị trí được ghi đè (--amend cho phép
+ + commit đè.
+ + Khi đó, lệnh git push sẽ có vấn đề.
+ + Giải pháp:
+ git push <tên repo> <tên nhánh> -f
+ + Trong đó, -f là force push, yêu cầu github cập nhật ngay cả khi ghi đè.
+ + Lưu ý, nếu nhánh có bản remote repo lúc đầu ko đc đặt tên, nó sẽ biến mất.
+
+* (Feature 3) Sync changes from github to computer.
+- Tạo 1 nơi viết lệnh mới
+- Chuyển địa điểm code đến Desktop:
+cd ~/Desktop
+- Sau đó:
+git clone <mã https> <tên folder>
+ + Mục đích: copy các file có trên remote repo về máy
+ + <Tên folder> có thể có hoặc không, nếu không sẽ tạo tự động 1 folder
+ + Ta sẽ có 1 local repo tương tự nhưng độc lập với cái trong máy
+ + Khi thực hiện commit trên repo mới và push lên github, sử dụng lệnh
+ + git log ... sẽ thấy commit trên local và remote đã là một.
+ + Tuy nhiên khi quay lại nơi viết lệnh lúc đầu, sử dụng git log ... sẽ thấy
+ + chưa có bản cập nhật như ở bên viết lệnh kia.
+- Ghép lại:
+ + Chuyển về nơi chứa file repo lúc đầu
+ 
