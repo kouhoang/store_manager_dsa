@@ -1,4 +1,0 @@
-git add .
-git commit -m "Version 1" --amend
-
-Dán đè lên commit(version) trước

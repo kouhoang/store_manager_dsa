@@ -33,3 +33,9 @@ git checkout <tên nhánh chính>
 - Khi chuyển nhánh sẽ không có điểm nào lưu nó nữa nên nó sẽ không được trỏ tới
 - Khi đó, nếu muốn giữ lại, cần gắn tên cho nó
 git branch <tên nhánh> <mã hashcode của nhánh>
+
+*Amend
+git add .
+git commit -m "Version 1" --amend
+- Dán đè lên commit(version) trước
+- Có khả năng tạo nhánh nếu nhánh đó đang có liên kết với remote repo.

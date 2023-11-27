@@ -91,4 +91,44 @@ git clone <mã https> <tên folder>
  + chưa có bản cập nhật như ở bên viết lệnh kia.
 - Ghép lại:
  + Chuyển về nơi chứa file repo lúc đầu
- 
+ + Sử dụng lệnh fetch
+ git fetch
+ + Sau đó, kiểm tra lại (git log...)
+ + Cập nhật lại.
+(Bằng một cách nào đó, tôi chưa thể test tính năng này)
+
+- Lệnh pull:
+git pull <remote repo which want to pull from> <nhánh>
+ + Khi lệnh này đc thực thi, ta sẽ cập nhật nhánh trong repo được chọn.
+ + Tương tự, có thể tạo shortcut:
+ git pull <repo> <nhánh> --set-upstream
+
+* Summary:
+1. Create an Online Backup
+git remote add <repo> <url>
+git push <repo> <branch>
+2. Sync Computer -> GitHub
+git push origin <branch>
+git push origin <branch> -f
+3. Sync Github -> Computer
+git pull origin <branch>
+-> Làm thủ công. Vì kiểm soát được tiến độ và chất lượng code.
+
+* Giải quyết vấn đề:
+1. Tạo project trên git hub
+- C1:
+ + Create some new code
+ + git init
+ + Create Github reposity
+ + git push
+- C2:
+ + Create new reposity on Github first
+ + git clone
+ - Khi clone, tại sao lại chọn Desktop, vì đây là nơi Comment line đang chạy
+ - Tiết kiệm một số bước như: Khởi tạo (init), kết nối link http (git remote add...).
+2. Tham gia vào 1 team đã có project:
+ - Download the team's code -> git clone the team's repository
+ - Contribute to the code -> work with the code as normal
+
+* Setting up SSH Keys for Github (Chưa tìm hiểu)
+
