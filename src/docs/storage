@@ -1,0 +1,18 @@
+Storage:
+- Lưu dữ liệu đầu vào và quyết định chuyển các thành phần ra khỏi kho.
+- Chỉ tạo một lần khi chạy. (Singleton – Design Pattern)
+- Thực hiện phân loại các loại sản phẩm khác nhau. (Sản phẩm đâu thể chỉ có 1 mẫu)
+- Dữ liệu lấy ra các sản phẩm nhập kho sớm nhất của từng loại sản phẩm.
+- Trả ra hàng tồn kho mỗi loại. ( size())
+- CTDL:
+ + BBST (Cây cân bằng nhị phân tìm kiếm) (Key: ngày nhập kho) chứa sản phẩm của 1 loại sản phẩm.
+ + ArrayList: Lưu các thành phần của các loại sản phẩm (mỗi loại 1 ô trong array). Điều này có thể xác định qua tên class của sản phẩm.
+
+- Như vậy, Storage sử dụng CTDL List, lưu thành phần là các cây StorageBBST mang đối tượng cụ thể (vd: quần, áo)
+- StorageBBST xây dựng CTDL Balanced Binary Search Tree với kiểu đối tượng sản phẩm chung để áp dụng lưu từng loại sản phẩm.
+
+InputStorage:
+- Có các hàm static để thực hiện quá trình thêm dữ liệu sản phẩm từ đầu vào vào Storage. (class trung gian)
+
+StorageBBST:
+- Cài đặt kiểu cây cân bằng nhị phân tìm kiếm cho kiểu dữ liệu sản phẩm nói chung.
