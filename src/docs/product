@@ -1,0 +1,11 @@
+Sản phẩm có 4 thuộc tính: name, id, inputDate, price
+Các sản phẩm phải có mã khác nhau, lưu các sản phẩm theo key: id
+Nhưng sản phẩm được ưu tiên theo inputDate khi lấy ra khỏi kho.
+Thật khó, để cây - kiểu CTDL để lưu sản phẩm phải có thể xử lý đồng thời 2 thuộc tính mà không thể ưu tiên 1 thứ.
+Thật vậy, vì các sản phẩm có ngày nhập kho tăng dần, mã sản phẩm cũng nên có quy luật và tăng theo ngày.
+Hay có thể nói, sản phẩm cùng loại nhập kho trước phải có mã id nhỏ hơn id của sản phẩm loại đó nhưng nhập sau.
+
+Sản phẩm có thể là:
++ Quần.
++ Áo.
++ ...
