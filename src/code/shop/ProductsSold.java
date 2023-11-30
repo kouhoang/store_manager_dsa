@@ -1,6 +1,8 @@
 package code.shop;
 
-public class ProductsSold {
+import code.tree.SimpleTreeMethod;
+
+public class ProductsSold /*implements SimpleTreeMethod<String, >*/ {
     //Là các "kệ hàng" lưu các sản phẩm được bày bán và là sản phẩm có đầu vào nhập vào sớm nhất.
     //Lưu các sản phẩm - tất cả các loại.
     //Là một cây
@@ -27,5 +29,10 @@ public class ProductsSold {
 
     }
 
-    private ProductsSold root;
+    private ProductNode root = null;
+
+    public ProductNode getRoot(){
+        return root;
+    }
+
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 //Design pattern: Singleton
 public class Storage {
-    private static Storage storage;
+    private static Storage storage = null;
 
     //Sẽ có 2 thứ lưu chuỗi thông tin
     //1. Lưu đầu mã sản phẩm (3 chữ cái đầu của id) -> Hướng tiếp cận: Enum (?), ArrayList
