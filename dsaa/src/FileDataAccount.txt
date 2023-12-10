@@ -1,0 +1,2 @@
+Admin|admin|123456|admin
+Ngọc|ngoccan2diop|123456|customer
