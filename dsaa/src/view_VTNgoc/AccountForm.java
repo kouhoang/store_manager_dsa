@@ -15,7 +15,7 @@ import VTNgoc.Account;
 import javax.swing.UIManager;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import KDMinh.AccountManagerTree;
+import AVL.AccountManagerTree;
 import VTNgoc.Function;
 import VTNgoc.FunctionWrapper;
 
@@ -358,7 +358,7 @@ public class AccountForm extends javax.swing.JInternalFrame {
 
         jScrollPane1.setBorder(null);
 
-        tblAccount.setModel(new javax.swing.table.DefaultTableModel(
+        tblAccount.setModel(new DefaultTableModel(
             new Object [][] {
 
             },

@@ -22,7 +22,7 @@ public class AddProduct extends javax.swing.JDialog {
      */
     private ProductForm owner;
 
-    public AddProduct(javax.swing.JInternalFrame parent, javax.swing.JFrame owner, boolean modal) {
+    public AddProduct(javax.swing.JInternalFrame parent, JFrame owner, boolean modal) {
         super(owner, modal);
         this.owner = (ProductForm) parent;
         initComponents();
@@ -307,7 +307,7 @@ public class AddProduct extends javax.swing.JDialog {
       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                AddProduct dialog = new AddProduct(new javax.swing.JFrame(), true);
+                AddProduct dialog = new AddProduct(new JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

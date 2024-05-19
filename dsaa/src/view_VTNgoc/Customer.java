@@ -12,14 +12,14 @@ import javax.swing.UnsupportedLookAndFeelException;
 import VTNgoc.Account;
 import VTNgoc.AmountSold;
 import VTNgoc.Product;
-import TGQuynh.SortedLinkedPriorityQueue;
+import PriorityQueue.SortedLinkedPriorityQueue;
 
 
 /**
  *
  * @author Vu Tuan Ngoc
  */
-public class Customer extends javax.swing.JFrame {
+public class Customer extends JFrame {
 
     private Account currentAcc;
 
@@ -186,12 +186,12 @@ public class Customer extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 47, 79));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/97029.png"))); // NOI18N
+        jLabel2.setIcon(new ImageIcon(getClass().getResource("/icon/97029.png"))); // NOI18N
 
         jPanel3.setBackground(new java.awt.Color(216, 216, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/top2_1.png"))); // NOI18N
+        jLabel4.setIcon(new ImageIcon(getClass().getResource("/icon/top2_1.png"))); // NOI18N
 
         txtTop2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         txtTop2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -219,7 +219,7 @@ public class Customer extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(216, 216, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/top3_1.png"))); // NOI18N
+        jLabel6.setIcon(new ImageIcon(getClass().getResource("/icon/top3_1.png"))); // NOI18N
 
         txtTop3.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         txtTop3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -386,7 +386,7 @@ public class Customer extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(216, 216, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/top1_1.png"))); // NOI18N
+        jLabel3.setIcon(new ImageIcon(getClass().getResource("/icon/top1_1.png"))); // NOI18N
 
         txtTop1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         txtTop1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -414,7 +414,7 @@ public class Customer extends javax.swing.JFrame {
                 .addComponent(txtTop1))
         );
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sale.png"))); // NOI18N
+        jLabel10.setIcon(new ImageIcon(getClass().getResource("/icon/sale.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

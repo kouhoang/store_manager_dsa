@@ -12,17 +12,17 @@ import java.util.Scanner;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import VTNgoc.Account;
-import KDMinh.AccountManagerTree;
+import AVL.AccountManagerTree;
 import VTNgoc.AmountSold;
-import KDMinh.AmountSoldManagerTree;
+import AVL.AmountSoldManagerTree;
 import VTNgoc.ChiTietPhieu;
-import KDMinh.PhieuMuaManagerTree;
+import AVL.PhieuMuaManagerTree;
 
 import VTNgoc.Product;
 import VTNgoc.Phieu;
 
-import KDMinh.ProductManagerTree;
-import TGQuynh.SortedLinkedPriorityQueue;
+import AVL.ProductManagerTree;
+import PriorityQueue.SortedLinkedPriorityQueue;
 
 /**
  *

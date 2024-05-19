@@ -19,7 +19,7 @@ import VTNgoc.Product;
 import VTNgoc.ChiTietPhieu;
 import VTNgoc.Function;
 import VTNgoc.Phieu;
-import KDMinh.ProductManagerTree;
+import AVL.ProductManagerTree;
 import VTNgoc.FunctionWrapper;
 
 /**
@@ -43,7 +43,7 @@ public class GioHang extends javax.swing.JInternalFrame {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public GioHang(Account t, javax.swing.JFrame parent, javax.swing.JFrame owner, boolean modal) {
+    public GioHang(Account t, JFrame parent, JFrame owner, boolean modal) {
         BasicInternalFrameUI ui = (BasicInternalFrameUI) this.getUI();
         ui.setNorthPane(null);
         initComponents();
@@ -240,7 +240,7 @@ public class GioHang extends javax.swing.JInternalFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblNhapHang.setModel(new javax.swing.table.DefaultTableModel(
+        tblNhapHang.setModel(new DefaultTableModel(
             new Object [][] {
 
             },
@@ -343,7 +343,7 @@ public class GioHang extends javax.swing.JInternalFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        tblSanPham.setModel(new javax.swing.table.DefaultTableModel(
+        tblSanPham.setModel(new DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},

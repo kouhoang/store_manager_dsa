@@ -169,7 +169,7 @@ public class Thongke extends javax.swing.JInternalFrame {
         });
         jPanel3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 20, 130, 40));
 
-        tblSanPham.setModel(new javax.swing.table.DefaultTableModel(
+        tblSanPham.setModel(new DefaultTableModel(
             new Object [][] {
 
             },

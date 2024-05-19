@@ -17,7 +17,7 @@ public class DetailProduct extends javax.swing.JDialog {
     private ProductForm owner;
     DecimalFormat formatter = new DecimalFormat("###,###,###");
 
-    public DetailProduct(javax.swing.JInternalFrame parent, javax.swing.JFrame owner, boolean modal) {
+    public DetailProduct(javax.swing.JInternalFrame parent, JFrame owner, boolean modal) {
         super(owner, modal);
         initComponents();
         setLocationRelativeTo(null);
@@ -243,7 +243,7 @@ public class DetailProduct extends javax.swing.JDialog {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                DetailProduct dialog = new DetailProduct(new javax.swing.JFrame(), true);
+                DetailProduct dialog = new DetailProduct(new JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

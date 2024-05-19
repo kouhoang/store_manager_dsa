@@ -79,7 +79,7 @@ public class Login extends javax.swing.JFrame {
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 370, 80));
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Untitled-1.png"))); // NOI18N
+        jLabel7.setIcon(new ImageIcon(getClass().getResource("/icon/Untitled-1.png"))); // NOI18N
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 260, 260));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 580));
@@ -113,7 +113,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         loginUser.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 loginUserKeyPressed(evt);
             }
         });
@@ -123,7 +123,7 @@ public class Login extends javax.swing.JFrame {
         passwordUser.setForeground(new java.awt.Color(255, 255, 255));
         passwordUser.setBorder(null);
         passwordUser.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 passwordUserKeyPressed(evt);
             }
         });
@@ -150,7 +150,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         JPaneLogin.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 JPaneLoginKeyPressed(evt);
             }
         });
@@ -218,7 +218,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_loginUserActionPerformed
 
-    private void loginUserKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginUserKeyPressed
+    private void loginUserKeyPressed(KeyEvent evt) {//GEN-FIRST:event_loginUserKeyPressed
         // TODO add your handling code here:
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             // Enter was pressed. Your code goes here.
@@ -226,7 +226,7 @@ public class Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_loginUserKeyPressed
 
-    private void passwordUserKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordUserKeyPressed
+    private void passwordUserKeyPressed(KeyEvent evt) {//GEN-FIRST:event_passwordUserKeyPressed
         // TODO add your handling code here:
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             // Enter was pressed. Your code goes here.
@@ -255,7 +255,7 @@ public class Login extends javax.swing.JFrame {
 
     }//GEN-LAST:event_JPaneLoginMouseReleased
 
-    private void JPaneLoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JPaneLoginKeyPressed
+    private void JPaneLoginKeyPressed(KeyEvent evt) {//GEN-FIRST:event_JPaneLoginKeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_JPaneLoginKeyPressed
 

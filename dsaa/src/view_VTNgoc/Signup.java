@@ -67,7 +67,7 @@ public class Signup extends javax.swing.JFrame {
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 300, 80));
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, -1, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Untitled-1.png"))); // NOI18N
+        jLabel12.setIcon(new ImageIcon(getClass().getResource("/icon/Untitled-1.png"))); // NOI18N
         jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 260, 260));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 580));
@@ -101,7 +101,7 @@ public class Signup extends javax.swing.JFrame {
             }
         });
         phoneUser.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 phoneUserKeyPressed(evt);
             }
         });
@@ -111,7 +111,7 @@ public class Signup extends javax.swing.JFrame {
         passwordUser.setForeground(new java.awt.Color(255, 255, 255));
         passwordUser.setBorder(null);
         passwordUser.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 passwordUserKeyPressed(evt);
             }
         });
@@ -138,7 +138,7 @@ public class Signup extends javax.swing.JFrame {
             }
         });
         JPaneLogin.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 JPaneLoginKeyPressed(evt);
             }
         });
@@ -193,7 +193,7 @@ public class Signup extends javax.swing.JFrame {
             }
         });
         juserName.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 juserNameKeyPressed(evt);
             }
         });
@@ -238,7 +238,7 @@ public class Signup extends javax.swing.JFrame {
             }
         });
         loginUser1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+            public void keyPressed(KeyEvent evt) {
                 loginUser1KeyPressed(evt);
             }
         });
@@ -276,7 +276,7 @@ public class Signup extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_phoneUserActionPerformed
 
-    private void phoneUserKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_phoneUserKeyPressed
+    private void phoneUserKeyPressed(KeyEvent evt) {//GEN-FIRST:event_phoneUserKeyPressed
         // TODO add your handling code here:
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             // Enter was pressed. Your code goes here.
@@ -284,7 +284,7 @@ public class Signup extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_phoneUserKeyPressed
 
-    private void passwordUserKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordUserKeyPressed
+    private void passwordUserKeyPressed(KeyEvent evt) {//GEN-FIRST:event_passwordUserKeyPressed
         // TODO add your handling code here:
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             // Enter was pressed. Your code goes here.
@@ -312,7 +312,7 @@ public class Signup extends javax.swing.JFrame {
 
     }//GEN-LAST:event_JPaneLoginMouseReleased
 
-    private void JPaneLoginKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JPaneLoginKeyPressed
+    private void JPaneLoginKeyPressed(KeyEvent evt) {//GEN-FIRST:event_JPaneLoginKeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_JPaneLoginKeyPressed
 
@@ -328,7 +328,7 @@ public class Signup extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_juserNameActionPerformed
 
-    private void juserNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_juserNameKeyPressed
+    private void juserNameKeyPressed(KeyEvent evt) {//GEN-FIRST:event_juserNameKeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_juserNameKeyPressed
 
@@ -355,7 +355,7 @@ public class Signup extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_loginUser1ActionPerformed
 
-    private void loginUser1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginUser1KeyPressed
+    private void loginUser1KeyPressed(KeyEvent evt) {//GEN-FIRST:event_loginUser1KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_loginUser1KeyPressed
 
@@ -376,13 +376,13 @@ public class Signup extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Signup.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Signup.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Signup.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Signup.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Signup.class.getName()).log(Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
