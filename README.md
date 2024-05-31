@@ -1,4 +1,4 @@
-# store_manager_dsa
+# Phần mềm quản lý cửa hàng
 Project Cấu trúc dữ liệu và Giải thuật về Quản lý cửa hàng
 Phát triển phần mềm quản lý bán hàng cơ bản bằng Java cho môn Cấu trúc dữ liệu
 và thuật toán để tối ưu hóa quy trình bán hàng và quản lý sản phẩm bằng các cấu
